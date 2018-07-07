@@ -1,0 +1,57 @@
+
+1 Post:- http://localhost:8000/app/api/apiv1/create_superadmin
+  Header:- "content-type":"application/json;charset=UTF-8"
+  {
+    "username":"superadmin",
+    "password":"superadmin",
+    "email":"superadmin@fortraiz.com",
+    "phone":"8123984800",
+    "is_active":1,
+    "role":["sadmin"]
+  }
+
+2  Post:-http://localhost:8000/app/api/apiv1/login
+   Header:- "content-type":"application/json;charset=UTF-8"
+    {
+    "username":"superadmin",
+    "password":"superadmin",
+    "email":"superadmin@fortraiz.com"
+    }
+3 post : http://localhost:8000/app/api/apiv1/create_group
+  Header:- "content-type":"application/json;charset=UTF-8"
+   {
+    "name" : "abc",
+    "email" : "abc@gmail.com",
+    "size" : 10
+    }
+4 Post:-http://localhost:8000/app/api/apiv1/create_user
+  Header:- "content-type":"application/json;charset=UTF-8"
+    {
+    "username":"admin2",
+    "password":"admin",
+    "email":"admin2@fortraiz.com",
+    "phone":"8123984800",
+    "is_active":1,
+    "role":["admin"],
+    "group_id":[1],
+    "owner_id" : [1]
+    }
+
+5 Post:- http://localhost:8000/app/api/apiv1/delete_records
+Header:- "content-type":"application/json;charset=UTF-8"
+{
+    "name" : "abcdef",
+    "email" : "abc@gmail.com",
+    "size" : 10,
+    "table_name" : "group_"
+}
+
+6 Post:- http://localhost:8000/app/api/apiv1/update_records
+Header:- "content-type":"application/json;charset=UTF-8"
+{
+    "name" : "abcdef",
+    "email" : "abc@gmail.com",
+    "size" : 10,
+    "table_name" : "group_"
+}   
+
